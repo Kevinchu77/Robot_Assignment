@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="07/29/22||13:23:03" using="Simscape Multibody Link Version 4.8" from="SolidWorks 29.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="ASSEMBLY 3 JOINTS" uid="ASSEMBLY 3 JOINTS" version="278">
+<AssemblyFile name="ASSEMBLY 3 JOINTS.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="S5_BASE-1" uid="S5_BASE-1" grounded="true" entityUid="S5_BASE*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0092373521648786011 0.049998469383552013 0.21049490074400137</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Diffuse r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Specular r="0.49411764705882355" g="0.36862745098039218" b="0.25882352941176467" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="S5_ARM3-1" uid="S5_ARM3-1" entityUid="S5_ARM3*:*Default">
+<Transform>
+<Rotation>-1 -1.7374990335383722e-014 -7.0441950176436351e-015 -7.0441950176436942e-015 3.4302489988856478e-015 1 -1.7486012637846216e-014 1 -3.4302489988857674e-015</Rotation>
+<Translation>0.36570522733805383 0.053998469383555542 0.49199490074400332</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Diffuse r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Specular r="0.49411764705882355" g="0.36862745098039218" b="0.25882352941176467" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="S5_ARM1-1" uid="S5_ARM1-1" entityUid="S5_ARM1*:*Default">
+<Transform>
+<Rotation>-1 0 -7.0441950176436343e-015 -7.0441950176436343e-015 3.4914813388431334e-015 1 0 1 -3.4914813388431334e-015</Rotation>
+<Translation>0.0092373521648786011 0.049998469383552013 0.20599490074400209</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Diffuse r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Specular r="0.49411764705882355" g="0.36862745098039218" b="0.25882352941176467" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="S5_ARM2-1" uid="S5_ARM2-1" entityUid="S5_ARM2*:*Default">
+<Transform>
+<Rotation>-0.50000000000000389 0.86602540378443638 -7.0441950176436351e-015 -5.5141473448063957e-016 7.8155763339340428e-015 1 0.86602540378443638 0.500000000000004 -3.4302489988857666e-015</Rotation>
+<Translation>0.097237352164880053 0.051998469383553098 0.33699490074400185</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Diffuse r="0.9882352941176471" g="0.73725490196078436" b="0.51764705882352935" a="1"/>
+<Specular r="0.49411764705882355" g="0.36862745098039218" b="0.25882352941176467" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>S5_BASE-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 3.4914813388431334e-015 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>S5_ARM1-1</Uid>
+</InstancePath>
+<Position>0 0.004500000000000004 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>S5_BASE-1</Uid>
+</InstancePath>
+<Position>0 -6.9388939039072284e-016 -0.1925</Position>
+<Axis>0 3.4914813388431334e-015 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>S5_ARM1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>S5_ARM1-1</Uid>
+</InstancePath>
+<Position>-0.087999999999999995 0.18600000000000003 -0.060999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>S5_ARM2-1</Uid>
+</InstancePath>
+<Position>0 0 -0.063</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>S5_ARM1-1</Uid>
+</InstancePath>
+<Position>-0.087999999999999995 0.13099999999999998 -0.060999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>S5_ARM2-1</Uid>
+</InstancePath>
+<Position>0 0 -0.075499999999999984</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>S5_ARM2-1</Uid>
+</InstancePath>
+<Position>0 0.31000000000000005 0.067000000000000004</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>S5_ARM3-1</Uid>
+</InstancePath>
+<Position>0 0 0.064999999999999988</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>S5_ARM2-1</Uid>
+</InstancePath>
+<Position>0 0.31000000000000005 -0.070999999999999994</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>S5_ARM3-1</Uid>
+</InstancePath>
+<Position>0 0 -0.069000000000000006</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="S5_ARM1" uid="S5_ARM1*:*Default" version="139">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="S5_ARM1.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.0910247120214596</Mass>
+<CenterOfMass>-0.039949927159715772 0.078642782866133631 -0.0017991591169871086</CenterOfMass>
+<Inertia>0.012617096769002597 0.013813151449319367 0.018010153313706055 0.0003442135776803672 -0.00029526823603951146 0.0055755036917874094</Inertia>
+</MassProperties>
+<GeometryFile name="S5_ARM1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.80000000000000004" g="0.80000000000000004" b="0.80000000000000004" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="S5_ARM2" uid="S5_ARM2*:*Default" version="144">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="S5_ARM2.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.3701264931444914</Mass>
+<CenterOfMass>0.0078030580764583699 0.13604887076360689 0.0021226629906909724</CenterOfMass>
+<Inertia>0.087244027683960043 0.035241483877061316 0.061682245544138051 0.00073311002713599314 -2.8531514145041068e-005 -0.00040565477022909787</Inertia>
+</MassProperties>
+<GeometryFile name="S5_ARM2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.80000000000000004" g="0.80000000000000004" b="0.80000000000000004" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="S5_ARM3" uid="S5_ARM3*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="S5_ARM3.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>2.619563686431849</Mass>
+<CenterOfMass>0.012699884328564302 0.017930375642989417 -0.0010794117975430565</CenterOfMass>
+<Inertia>0.0072941602475928187 0.0081252686316807942 0.0090198688763266956 -3.3654425503898744e-005 -2.6773504418132242e-005 0.00080951782513045414</Inertia>
+</MassProperties>
+<GeometryFile name="S5_ARM3_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.80000000000000004" g="0.80000000000000004" b="0.80000000000000004" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="S5_BASE" uid="S5_BASE*:*Default" version="210">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="S5_BASE.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.9305784992918182</Mass>
+<CenterOfMass>-0.010767328775065326 -0.00022775885648831094 -0.10605466124641469</CenterOfMass>
+<Inertia>0.031508550862891262 0.035978220812381202 0.029404213916917304 -5.7023160817414709e-005 -0.00036357468745226566 -0.00012076037152139896</Inertia>
+</MassProperties>
+<GeometryFile name="S5_BASE_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.80000000000000004" g="0.80000000000000004" b="0.80000000000000004" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
